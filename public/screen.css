@@ -10,3 +10,91 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
+header {
+  background-color: coral;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main,
+main section,
+main div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+main h3 {
+  margin-top: 0;
+}
+
+#player1Name {
+  margin-bottom: 1.1em;
+}
+#player2Name {
+  margin-bottom: 0;
+}
+
+main section,
+main div {
+  flex-direction: column;
+  align-items: center;
+}
+
+main section button {
+  background-color: red;
+  padding: 0.2em 0.4em;
+  border: 0.1em solid black;
+  border-radius: 1em;
+  font-size: small;
+}
+
+main section button:active {
+  padding: 0.1em 0.4em;
+}
+
+.is-computer {
+  background-color: green;
+}
+
+i {
+  padding: 0.2em;
+  border: 0.1em solid black;
+  border-radius: 0.5em;
+  margin: 0.1em;
+  font-size: 7vh;
+}
+
+i:active {
+  background-color: greenyellow;
+  margin-top: 0.1em;
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: coral;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer button {
+  background-color: white;
+  padding: 1em 5em;
+  border-radius: 1em;
+  margin: 1em;
+}
+
+@media screen and (min-width: 600px) {
+  main section {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  i {
+    font-size: 7vw;
+  }
+}

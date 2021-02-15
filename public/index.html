@@ -3,12 +3,60 @@
   <head lang="en">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Roshambo Js</title>
+    <title>Roshambo</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/screen.css" />
+    <script
+      src="https://kit.fontawesome.com/dcd1f00bcf.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1 class="hello-world"></h1>
+    <header>
+      <h1>Roshambo! Choose Wisely!</h1>
+    </header>
+    <main>
+      <section>
+        <div>
+          <h2 id="player1Name">Player 1</h2>
+          <h3 id="player1Wins">Wins: 0</h3>
+          <input
+            type="text"
+            placeholder="Player 1's Name"
+            id="player1NameChanger"
+          />
+        </div>
+        <i class="fas fa-hand-rock rock"></i>
+        <i class="fas fa-hand-paper paper"></i>
+        <i class="fas fa-hand-scissors scissors"></i>
+        <i class="fas fa-hand-lizard lizard"></i>
+        <i class="fas fa-hand-spock spock"></i>
+      </section>
+      <section>
+        <div>
+          <h2 id="player2Name">Player 2</h2>
+          <button>Computer</button>
+          <h3 id="player2Wins">Wins: 0</h3>
+          <input
+            type="text"
+            placeholder="Player 2's Name"
+            id="player2NameChanger"
+          />
+        </div>
+        <i class="far fa-hand-rock rock"></i>
+        <i class="far fa-hand-paper paper"></i>
+        <i class="far fa-hand-scissors scissors"></i>
+        <i class="far fa-hand-lizard lizard"></i>
+        <i class="far fa-hand-spock spock"></i>
+      </section>
+    </main>
+    <footer>
+      <h2>Waiting for moves to be made...</h2>
+      <section>
+        <button id="clear">Clear Hands</button>
+        <button id="reset">Reset Game</button>
+      </section>
+    </footer>
     <script src="/main.js" charset="utf-8"></script>
   </body>
 </html>
