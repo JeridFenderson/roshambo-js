@@ -47,6 +47,7 @@ function handleClick(event) {
   }
   if (player1Choice === '' && playerIdentifier === 'far') {
     footerBanner.textContent = `${player1Name} must shoot first!`
+    return
   }
   if (
     player1Choice !== '' &&
