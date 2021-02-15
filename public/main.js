@@ -31,6 +31,7 @@ function handleClick(event) {
   if (player1Choice !== '' && player2Choice !== '') {
     headerBanner.textContent = 'This round has already been played!'
     footerBanner.textContent = 'Clear your hands before playing again'
+    return
   }
   if (
     player1Choice !== '' &&
