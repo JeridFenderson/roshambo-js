@@ -142,10 +142,10 @@ function convertComputer(event) {
 function main() {
   document
     .querySelector('#player1NameChanger')
-    .addEventListener('keyup', player1NameChange)
+    .addEventListener('input', player1NameChange)
   document
     .querySelector('#player2NameChanger')
-    .addEventListener('keyup', player2NameChange)
+    .addEventListener('input', player2NameChange)
 
   document
     .querySelector('main section button')
