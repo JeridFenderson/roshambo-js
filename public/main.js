@@ -58,8 +58,7 @@ function handleClick(event) {
     evaluateWinner()
   }
   if (isComputer) {
-    const shoot = Math.floor(Math.random() * 6 + 1)
-    switch (shoot) {
+    switch (Math.floor(Math.random() * 6 + 1)) {
       case 1:
         player2Choice = 'rock'
         break
